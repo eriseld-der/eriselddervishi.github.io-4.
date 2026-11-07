@@ -1,305 +1,433 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eriseld Dervishi | Pflegepersonal</title>
-    <meta name="description" content="Professionelle Vermittlung und Organisation von Pflegepersonal für Krankenhäuser und Kliniken in Deutschland.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>ED Pflegepersonal | Personal im Gesundheitswesen</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #243247;
-            background: #ffffff;
-            line-height: 1.6;
-        }
+<meta name="description" content="ED Pflegepersonal – Ihr Ansprechpartner für qualifiziertes Pflegepersonal und Personallösungen im Gesundheitswesen.">
 
-        header {
-            background: #ffffff;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        }
+<style>
 
-        .logo {
-            font-size: 25px;
-            font-weight: bold;
-            color: #12345a;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .logo span {
-            color: #2699cf;
-        }
+body {
+    font-family: Arial, sans-serif;
+    color: #26364a;
+    line-height: 1.6;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #243247;
-            margin-left: 25px;
-            font-weight: 600;
-        }
+header {
+    background: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+}
 
-        nav a:hover {
-            color: #2699cf;
-        }
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #12345a;
+}
 
-        .hero {
-            min-height: 570px;
-            background: linear-gradient(90deg, rgba(9,35,65,.94), rgba(9,35,65,.62)),
-            url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1800&q=85');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            padding: 80px 10%;
-            color: white;
-        }
+.logo span {
+    color: #279dcc;
+}
 
-        .hero-content {
-            max-width: 680px;
-        }
+nav {
+    display: flex;
+    gap: 28px;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            line-height: 1.2;
-            margin-bottom: 25px;
-        }
+nav a {
+    text-decoration: none;
+    color: #26364a;
+    font-weight: 600;
+}
 
-        .hero p {
-            font-size: 19px;
-            margin-bottom: 35px;
-            color: #e5edf5;
-        }
+nav a:hover {
+    color: #279dcc;
+}
 
-        .button {
-            display: inline-block;
-            padding: 15px 28px;
-            background: #2699cf;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
 
-        .button:hover {
-            background: #1679aa;
-        }
+    background:
+    linear-gradient(90deg,
+    rgba(8,35,65,0.94),
+    rgba(8,35,65,0.55)),
+    url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1800&q=85');
 
-        section {
-            padding: 85px 10%;
-        }
+    background-size: cover;
+    background-position: center;
+}
 
-        .section-title {
-            text-align: center;
-            font-size: 34px;
-            color: #12345a;
-            margin-bottom: 20px;
-        }
+.hero-content {
+    max-width: 720px;
+}
 
-        .section-intro {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 45px;
-            color: #687587;
-        }
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: #e3edf6;
+}
 
-        .card {
-            padding: 35px 25px;
-            background: #f5f9fc;
-            border-radius: 10px;
-            text-align: center;
-            border-bottom: 4px solid #2699cf;
-        }
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #279dcc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .card h3 {
-            color: #12345a;
-            margin-bottom: 15px;
-        }
+.button:hover {
+    background: #1679a5;
+}
 
-        .card p {
-            color: #687587;
-        }
+section {
+    padding: 90px 10%;
+}
 
-        .about {
-            background: #f5f9fc;
-        }
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #12345a;
+    margin-bottom: 20px;
+}
 
-        .about-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
+.section-description {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto 50px;
+    color: #68788a;
+}
 
-        .about-content p {
-            margin-top: 20px;
-            color: #687587;
-        }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
-        .contact {
-            text-align: center;
-        }
+.card {
+    background: #f4f8fb;
+    padding: 38px 28px;
+    border-radius: 10px;
+    border-bottom: 4px solid #279dcc;
+}
 
-        .contact p {
-            margin: 15px 0 25px;
-        }
+.card h3 {
+    color: #12345a;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
 
-        footer {
-            background: #102b49;
-            color: white;
-            text-align: center;
-            padding: 30px 10%;
-        }
+.card p {
+    color: #68788a;
+}
 
-        footer p {
-            font-size: 14px;
-            color: #d4e0eb;
-        }
+.about {
+    background: #f4f8fb;
+}
 
-        @media(max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
 
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px;
-            }
+.about-content p {
+    margin-top: 20px;
+    color: #68788a;
+    font-size: 17px;
+}
 
-            nav a {
-                margin: 0;
-                font-size: 14px;
-            }
+.audience {
+    background: #12345a;
+    color: white;
+    text-align: center;
+}
 
-            .hero h1 {
-                font-size: 34px;
-            }
+.audience h2 {
+    color: white;
+}
 
-            .cards {
-                grid-template-columns: 1fr;
-            }
+.audience p {
+    max-width: 750px;
+    margin: 20px auto 30px;
+    color: #d9e6f1;
+}
 
-            section {
-                padding: 60px 7%;
-            }
-        }
-    </style>
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 20px auto 30px;
+    color: #68788a;
+}
+
+footer {
+    background: #0c2540;
+    color: white;
+    text-align: center;
+    padding: 35px 10%;
+}
+
+footer p {
+    color: #c6d4e2;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">ERISELD<span> DERVISHI</span></div>
+
+    <div class="logo">
+        ED <span>PFLEGEPERSONAL</span>
+    </div>
 
     <nav>
-        <a href="#home">Startseite</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#about">Über uns</a>
+        <a href="#start">Startseite</a>
+        <a href="#kliniken">Für Kliniken</a>
+        <a href="#pflegekraefte">Für Pflegekräfte</a>
+        <a href="#ueberuns">Über uns</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
+
 </header>
 
-<div class="hero" id="home">
+
+<!-- STARTSEITE -->
+
+<div class="hero" id="start">
+
     <div class="hero-content">
-        <h1>Das richtige Pflegepersonal zur richtigen Zeit.</h1>
+
+        <h1>
+            Gemeinsam für eine starke Pflege.
+        </h1>
 
         <p>
-            Wir verbinden qualifizierte Pflegekräfte mit Krankenhäusern
-            und medizinischen Einrichtungen in Deutschland.
+            ED Pflegepersonal bringt Krankenhäuser,
+            medizinische Einrichtungen und qualifizierte
+            Pflegekräfte zusammen.
         </p>
 
-        <a href="#kontakt" class="button">Jetzt Kontakt aufnehmen</a>
+        <a href="#kontakt" class="button">
+            Kontakt aufnehmen
+        </a>
+
     </div>
+
 </div>
 
-<section id="leistungen">
-    <h2 class="section-title">Unsere Leistungen</h2>
 
-    <p class="section-intro">
-        Wir unterstützen medizinische Einrichtungen bei der Suche
-        nach geeignetem Pflegepersonal.
+<!-- LEISTUNGEN -->
+
+<section id="kliniken">
+
+    <h2 class="section-title">
+        Für Krankenhäuser und Kliniken
+    </h2>
+
+    <p class="section-description">
+        Wir unterstützen medizinische Einrichtungen
+        bei der Suche nach geeignetem Pflegepersonal
+        und individuellen Personallösungen.
     </p>
 
     <div class="cards">
 
         <div class="card">
-            <h3>Für Krankenhäuser</h3>
+
+            <h3>Personalvermittlung</h3>
+
             <p>
-                Unterstützung bei der Suche nach qualifiziertem
-                Pflegepersonal für unterschiedliche Dienste.
+                Wir bringen medizinische Einrichtungen
+                mit qualifizierten Pflegekräften zusammen.
             </p>
+
         </div>
 
         <div class="card">
-            <h3>Für Pflegekräfte</h3>
+
+            <h3>Flexible Unterstützung</h3>
+
             <p>
-                Wir helfen Pflegekräften, passende Einsatzmöglichkeiten
-                und Arbeitsangebote zu finden.
+                Unterstützung bei der Suche nach Personal
+                für unterschiedliche Einsatzbereiche.
             </p>
+
         </div>
 
         <div class="card">
-            <h3>Flexible Einsätze</h3>
+
+            <h3>Persönliche Betreuung</h3>
+
             <p>
-                Unterstützung bei der Organisation von Tag-, Nacht-
-                und Wochenenddiensten.
+                Wir legen Wert auf eine zuverlässige
+                und langfristige Zusammenarbeit.
             </p>
+
         </div>
 
     </div>
+
 </section>
 
-<section class="about" id="about">
-    <div class="about-content">
 
-        <h2 class="section-title">Über uns</h2>
+<!-- PFLEGEKRAEFTE -->
 
-        <p>
-            Unser Ziel ist es, Krankenhäuser und Pflegekräfte
-            miteinander zu verbinden.
-        </p>
+<section class="audience" id="pflegekraefte">
 
-        <p>
-            Wir legen großen Wert auf Zuverlässigkeit,
-            Professionalität und eine gute Zusammenarbeit.
-        </p>
-
-    </div>
-</section>
-
-<section class="contact" id="kontakt">
-
-    <h2 class="section-title">Kontaktieren Sie uns</h2>
+    <h2 class="section-title">
+        Für Pflegekräfte
+    </h2>
 
     <p>
-        Sie suchen Pflegepersonal oder möchten als Pflegekraft
-        mit uns zusammenarbeiten?
+        Sie sind Pflegefachkraft und suchen neue berufliche
+        Möglichkeiten oder passende Einsätze?
+
+        Wir freuen uns darauf, Sie kennenzulernen
+        und gemeinsam passende Möglichkeiten zu finden.
     </p>
 
-    <a href="mailto:info@eriselddervishi.de" class="button">
-        E-Mail senden
+    <a href="#kontakt" class="button">
+        Jetzt Kontakt aufnehmen
     </a>
 
 </section>
 
+
+<!-- UEBER UNS -->
+
+<section class="about" id="ueberuns">
+
+    <div class="about-content">
+
+        <h2 class="section-title">
+            Über ED Pflegepersonal
+        </h2>
+
+        <p>
+            Unser Ziel ist es, Krankenhäuser und qualifizierte
+            Pflegekräfte miteinander zu verbinden.
+        </p>
+
+        <p>
+            Zuverlässigkeit, Professionalität und eine
+            persönliche Zusammenarbeit stehen bei uns
+            im Mittelpunkt.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- KONTAKT -->
+
+<section class="contact" id="kontakt">
+
+    <h2 class="section-title">
+        Kontakt
+    </h2>
+
+    <p>
+        Sie möchten mit uns zusammenarbeiten?
+        Wir freuen uns auf Ihre Nachricht.
+    </p>
+
+    <a href="mailto:IHRE-EMAIL@BEISPIEL.DE" class="button">
+        E-Mail schreiben
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
 <footer>
-    <p>© 2026 Eriseld Dervishi. Alle Rechte vorbehalten.</p>
+
+    <p>
+        © 2026 ED Pflegepersonal. Alle Rechte vorbehalten.
+    </p>
+
+    <br>
+
+    <p>
+        Personalvermittlung im Gesundheitswesen
+    </p>
+
 </footer>
 
 </body>
