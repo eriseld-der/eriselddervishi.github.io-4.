@@ -541,6 +541,73 @@ nav a:hover {
         font-size: 36px !important;
     }
 }
+ /* ED PREMIUM ECG LOGO */
+
+.logo {
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+    white-space: nowrap;
+    font-size: 27px !important;
+    font-weight: 900 !important;
+}
+
+.logo .logo-ed {
+    color: #111111 !important;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.logo .logo-word {
+    color: #c62828 !important;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.logo-ecg {
+    width: 48px;
+    height: 30px;
+    overflow: visible;
+}
+
+.logo-ecg path {
+    fill: none;
+    stroke: #c62828;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: ecgDraw 2.2s ease-in-out infinite;
+    filter: drop-shadow(0 0 3px rgba(198,40,40,0.5));
+}
+
+@keyframes ecgDraw {
+    0% {
+        stroke-dashoffset: 150;
+    }
+    55% {
+        stroke-dashoffset: 0;
+    }
+    85%, 100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .logo .logo-word {
+        font-size: 16px;
+    }
+
+    .logo .logo-ed {
+        font-size: 25px;
+    }
+
+    .logo-ecg {
+        width: 35px;
+    }
+}   
 </style>
 </head>
 
@@ -549,8 +616,14 @@ nav a:hover {
 <header>
 
     <div class="logo">
-        ED <span>PFLEGEPERSONAL</span>
-    </div>
+    <span class="logo-ed">ED</span>
+
+    <svg class="logo-ecg" viewBox="0 0 100 40">
+        <path d="M2 21 H25 L35 21 L43 7 L53 33 L63 13 L70 21 H98"/>
+    </svg>
+
+    <span class="logo-word">PFLEGEPERSONAL</span>
+</div>
 
     <nav>
         <a href="#start">Startseite</a>
